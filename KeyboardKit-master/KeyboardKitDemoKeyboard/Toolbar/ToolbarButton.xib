@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ToolbarButton" customModule="KeyboardKitDemoKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="639" height="288"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuy-KB-6h7">
+                    <rect key="frame" x="0.0" y="0.0" width="639" height="288"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-ma-FEQ">
+                            <rect key="frame" x="16" y="10" width="268" height="268"/>
+                            <color key="tintColor" red="0.22745098039215686" green="0.28627450980392155" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="t9h-ma-FEQ" secondAttribute="height" multiplier="1:1" id="60I-sx-VwE"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;ButtonName&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="VoZ-uK-zHX">
+                            <rect key="frame" x="292" y="133.5" width="327" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VoZ-uK-zHX" firstAttribute="centerY" secondItem="t9h-ma-FEQ" secondAttribute="centerY" id="G49-nN-YJZ"/>
+                        <constraint firstAttribute="trailing" secondItem="VoZ-uK-zHX" secondAttribute="trailing" constant="20" id="MCX-S3-4qa"/>
+                        <constraint firstItem="VoZ-uK-zHX" firstAttribute="leading" secondItem="t9h-ma-FEQ" secondAttribute="trailing" constant="8" id="SEe-IL-hha"/>
+                        <constraint firstItem="t9h-ma-FEQ" firstAttribute="centerY" secondItem="Fuy-KB-6h7" secondAttribute="centerY" id="SJB-Gp-srM"/>
+                        <constraint firstAttribute="bottom" secondItem="t9h-ma-FEQ" secondAttribute="bottom" constant="10" id="XWF-pz-NaP"/>
+                        <constraint firstItem="t9h-ma-FEQ" firstAttribute="top" secondItem="Fuy-KB-6h7" secondAttribute="top" constant="10" id="Ygm-qa-jy9"/>
+                        <constraint firstItem="t9h-ma-FEQ" firstAttribute="leading" secondItem="Fuy-KB-6h7" secondAttribute="leading" constant="16" id="zvy-mG-jKs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fuy-KB-6h7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2b8-57-IuN"/>
+                <constraint firstItem="Fuy-KB-6h7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="D2G-Cn-93h"/>
+                <constraint firstItem="Fuy-KB-6h7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="eez-N4-JNB"/>
+                <constraint firstItem="Fuy-KB-6h7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gZI-uB-pTl"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonIcon" destination="t9h-ma-FEQ" id="M8H-44-doT"/>
+                <outlet property="buttonTitle" destination="VoZ-uK-zHX" id="7Rv-xq-4cl"/>
+                <outlet property="content" destination="Fuy-KB-6h7" id="d97-UV-eUM"/>
+            </connections>
+            <point key="canvasLocation" x="300.72463768115944" y="301.33928571428572"/>
+        </view>
+    </objects>
+</document>
